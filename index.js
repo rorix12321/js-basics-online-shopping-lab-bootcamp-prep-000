@@ -1,2 +1,3 @@
-function addToCart(item);
-  return cart;
+function addToCart(item) {
+    return cart;
+}
