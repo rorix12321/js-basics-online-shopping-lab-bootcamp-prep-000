@@ -23,13 +23,13 @@ function viewCart() {
     var msg = "In your cart, you have ";
     for (var i = 0; i < cart.length; i++) {
       msg += `${cart[i].itemName} at $${cart[i].itemPrice}`;
-      // if (i === cart.length - 2) {
-      //   msg += ", and ";
-      // } else if (i === cart.length -1) {
-      //   msg += ".";
-      // } else {
-      //   msg += ", ";
-      // }
+      if (i === cart.length - 2) {
+        msg += ", and ";
+      } else if (i === cart.length -1) {
+        msg += ".";
+      } else {
+        msg += ", ";
+      }
     }
     return msg;
   }
