@@ -15,3 +15,14 @@ function addToCart(itemName) {
     cart.push(item);
     return `${item.itemName} has been added to your cart.`;
 }
+
+function removeFromCart(itemName) {
+  (for (let i = 0, condition; i++) {
+    let removed = i;
+    if (i = itemName) {
+      cart.splice(itemName);
+      return cart;
+    } else {
+      return "That item is not in your cart.";
+    }
+}
