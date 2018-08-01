@@ -25,7 +25,7 @@ function viewCart() {
         cartREEE += current.itemName;
         cartREEE += ` at $${current.itemPrice}, `;
       } else {
-        cartREEE += ` and ${current.itemName at $${current.itemPrice}.}`
+        cartREEE += ` and ${current.itemName at $${current.itemPrice}.}`;
       }
 }
 
