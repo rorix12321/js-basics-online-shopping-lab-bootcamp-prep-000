@@ -30,5 +30,3 @@ function removeFromCart(item) {
       return cart.splice(index, 1);
     }
   }
-}
-}
