@@ -28,6 +28,8 @@ function viewCart() {
         cartREEE += ` and ${current.itemName at $${current.itemPrice}.}`;
       }
 }
+}
+}
 
 function total() {
   var totalprice = 0
