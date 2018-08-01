@@ -20,8 +20,8 @@ function removeFromCart(itemName) {
     for (let i = 0; i < cart.length; i++) {
       let removed = cart[i];
       if (removed.itemName === itemName) {
-        cart = cart.splice(i, 1);
-        return cart;
+        let item = cart.splice(i, 1);
+        return item;
       } else {
         return "That item is not in your cart.";
       }
