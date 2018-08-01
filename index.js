@@ -22,12 +22,7 @@ function viewCart() {
     let current = cart[i];
     cartREEE += current.itemName;
     cartREEE += ` at $${current.itemPrice}, `;
-    if (i < cart.legnth -1) {
-      cartREEE += ", ";
-    }
-    else {
-      cartREEE += "and "
-    }
+
   } return "Your shopping cart is empty."
 }
 
