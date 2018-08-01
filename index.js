@@ -25,7 +25,7 @@ function viewCart() {
       cartREEE += ` at $${current.itemPrice}, `;
     } if (cart.length === 0) {
       return "Your shopping cart is empty."
-      } 
+      }
   }
 }
 
