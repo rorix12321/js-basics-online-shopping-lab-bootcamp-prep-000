@@ -24,6 +24,7 @@ function viewCart() {
       cartREEE += current.itemName;
       cartREEE += ` at $${current.itemPrice}, `;
       }
+      return cartREEE;
   } else {
       return "Your shopping cart is empty."
 }
