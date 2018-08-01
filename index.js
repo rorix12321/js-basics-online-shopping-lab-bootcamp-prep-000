@@ -23,8 +23,6 @@ function viewCart() {
       let current = cart[i];
       cartREEE += current.itemName;
       cartREEE += ` at $${current.itemPrice}, `;
-    } if (cart.length === 0) {
-      return "Your shopping cart is empty."
       }
   } else {
       return "Your shopping cart is empty."
