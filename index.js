@@ -27,7 +27,7 @@ function viewCart() {
       } else {
         cartREEE += ` and ${current.itemName} at $${current.itemPrice}.`;
       }
-    } 
+    }
     return cartREEE
   }
   return "this shit is empty"
