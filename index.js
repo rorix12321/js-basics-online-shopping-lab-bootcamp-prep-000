@@ -34,7 +34,7 @@ function viewCart() {
     }
     return cartREEE;
   }
-  return "Your cart is empty.";
+  return "Your shopping cart is empty.";
 }
 
 function total() {
