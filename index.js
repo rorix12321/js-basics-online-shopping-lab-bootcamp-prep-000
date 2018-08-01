@@ -16,14 +16,18 @@ function addToCart(itemName) {
     return `${item.itemName} has been added to your cart.`;
 }
 
-function removeFromCart(itemName) {
-    for (let i = 0; i < cart.length; i++) {
-      let removed = cart[i];
-      if (removed.itemName === itemName) {
-        let item = cart.splice(i, 1);
-        return item;
-      } else {
-        return "That item is not in your cart.";
+function removeFromCart(item) {
+  var index = -1;
+    for (var i = 0; i < cart.length; i++) {
+      if (cart[i].itemName === item) {
+        index = i;
+        break;
       }
-}
+    }
+    if (index === -1) {
+      return "That item is not in your cart.";
+    } else {
+      return cart.splice(index, 1);
+    }
+  }
 }
