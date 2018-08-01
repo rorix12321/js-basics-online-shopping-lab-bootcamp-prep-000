@@ -29,6 +29,7 @@ function viewCart() {
   } else {
       return "Your shopping cart is empty."
 }
+}
 
 function total() {
   var totalprice = 0
