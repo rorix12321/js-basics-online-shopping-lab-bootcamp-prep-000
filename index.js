@@ -15,4 +15,3 @@ function addToCart(item) {
   cart.push(object);
   return `${item} has been added to your cart.`
 }
-}
