@@ -28,7 +28,7 @@ function viewCart() {
         if (cart.length > 1) {
             cartREEE += `and ${current.itemName} at $${current.itemPrice}.`;
           } else {
-            return `${cartREEE} ${current.itemName} at ${current.itemPrice}.`;
+            return `${cartREEE}${current.itemName} at ${current.itemPrice}.`;
           }
         }
     }
