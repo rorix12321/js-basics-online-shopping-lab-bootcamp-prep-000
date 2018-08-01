@@ -25,12 +25,16 @@ function viewCart() {
         cartREEE += current.itemName;
         cartREEE += ` at $${current.itemPrice}, `;
       } else {
-        cartREEE += `and ${current.itemName} at $${current.itemPrice}.`;
-      }
+        if (cart.length > 1) {
+            cartREEE += `and ${current.itemName} at $${current.itemPrice}.`;
+          } else {
+            return `${cartREEE}, you have ${current.itemName} at ${current.itemPrice}.`
+          }
+        }
     }
     return cartREEE;
   }
-  return "this shit is empty";
+  return "Your cart is empty.";
 }
 
 function total() {
