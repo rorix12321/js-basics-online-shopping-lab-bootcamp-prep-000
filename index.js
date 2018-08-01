@@ -17,13 +17,14 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  let cartREEE = "In your cart, you have ";
-  for (let i = 0; i < cart.length; i++) {
-    let current = cart[i];
-    cartREEE += current.itemName;
-    cartREEE += ` at $${current.itemPrice}, `;
-
-  } return "Your shopping cart is empty."
+  if (cart.length > 0) {
+    let cartREEE = "In your cart, you have ";
+    for (let i = 0; i < cart.length; i++) {
+      let current = cart[i];
+      cartREEE += current.itemName;
+      cartREEE += ` at $${current.itemPrice}, `;
+    } return "Your shopping cart is empty."
+  }
 }
 
 function total() {
