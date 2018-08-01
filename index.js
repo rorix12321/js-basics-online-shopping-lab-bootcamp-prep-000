@@ -25,3 +25,4 @@ function removeFromCart(itemName) {
     } else {
       return "That item is not in your cart.";
 }
+}
