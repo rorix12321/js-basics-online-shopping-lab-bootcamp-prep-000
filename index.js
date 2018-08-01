@@ -18,8 +18,8 @@ function addToCart(itemName) {
 
 function removeFromCart(itemName) {
   (for (let i = 0, condition; i++) {
-    let removed = i;
-    if (i === itemName) {
+    let removed = cart[i];
+    if (removed.itemName === itemName) {
       cart.splice(removed);
       return cart;
     } else {
