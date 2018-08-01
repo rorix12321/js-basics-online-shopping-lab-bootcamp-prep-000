@@ -21,5 +21,5 @@ function viewCart() {
     else {
       cartREEE += "and "
     }
-  }
+  } return "Your shopping cart is empty."
 }
