@@ -17,7 +17,7 @@ function addToCart(itemName) {
 }
 
 function removeFromCart(itemName) {
-    for (let i = 0; cart.length > 0; i++) {
+    for (let i = 0; i < cart.length; i++) {
     let removed = cart[i];
     if (removed.itemName === itemName) {
       cart.splice(removed);
