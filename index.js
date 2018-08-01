@@ -26,3 +26,4 @@ function removeFromCart(itemName) {
       return "That item is not in your cart.";
 }
 }
+}
