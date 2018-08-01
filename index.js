@@ -21,13 +21,12 @@ function viewCart() {
     let cartREEE = "In your cart, you have ";
     for (let i = 0; i < cart.length; i++) {
       let current = cart[i];
-      cartREEE += current.itemName;
-      cartREEE += ` at $${current.itemPrice}, `;
+      if (i < cart.length - 1) {
+        cartREEE += current.itemName;
+        cartREEE += ` at $${current.itemPrice}, `;
+      } else {
+        cartREEE += ` and ${current.itemName at $${current.itemPrice}.}`
       }
-      return cartREEE;
-  } else {
-      return "Your shopping cart is empty."
-}
 }
 
 function total() {
