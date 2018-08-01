@@ -19,8 +19,8 @@ function addToCart(itemName) {
 function removeFromCart(itemName) {
   (for (let i = 0, condition; i++) {
     let removed = i;
-    if (i = itemName) {
-      cart.splice(itemName);
+    if (i === itemName) {
+      cart.splice(removed);
       return cart;
     } else {
       return "That item is not in your cart.";
