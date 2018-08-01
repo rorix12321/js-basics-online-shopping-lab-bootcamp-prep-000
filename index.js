@@ -23,5 +23,6 @@ function removeFromCart(itemName) {
         let item = cart.splice(i, 1);
         return item;
       }
-}
+    }
+    return "That item is not in your cart.";
 }
